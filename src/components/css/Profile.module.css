@@ -1,0 +1,47 @@
+.profile {
+  width: 300px;
+  height: 460px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: aliceblue;
+  font-family: Cambria, Cochin;
+  text-align: center;
+}
+.avatar {
+  margin-top: 50px;
+  width: 130px;
+  height: 130px;
+  background-color: antiquewhite;
+  border-radius: 100px;
+  border: rgb(160, 188, 211) solid 3px;
+}
+
+.description {
+  font-size: 18px;
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  padding-right: 40px;
+  padding-top: 10px;
+}
+
+.name {
+  font-size: 30px;
+}
+
+.stats li {
+  background-color: rgb(197, 197, 197);
+  width: 99px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid aliceblue;
+}
