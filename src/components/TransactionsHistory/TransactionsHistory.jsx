@@ -3,7 +3,6 @@ import css from './TransactionsHistory.module.css';
 import PropTypes from 'prop-types';
 import { TransactionHistoryRow } from './TransactionHistoryRow';
 
-
 export const TransactionHistory = ({ items }) => (
   <table className={css.transactionHistory}>
     <thead className={css.thead}>
@@ -26,8 +25,6 @@ export const TransactionHistory = ({ items }) => (
     </tbody>
   </table>
 );
-
-
 
 TransactionHistory.propTypes = {
   items: PropTypes.arrayOf(

@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import css from './Statistics.module.css';
-import { getRandomColor } from 'Utils/getRandomColor';
+import { getRandomColor } from 'utils/getRandomColor';
 
 export const Statistics = ({ title, stats }) => (
   <section className={css.statistics}>
@@ -26,7 +26,16 @@ export const Statistics = ({ title, stats }) => (
 
 Statistics.propTypes = {
   statList: PropTypes.arrayOf(
-    PropTypes.shape({ title: PropTypes.string, stats: PropTypes.array })
-      .isRequired
-  ),
+    PropTypes.shape({
+      title: PropTypes.string,
+      stats: PropTypes.arrayOf(
+        PropTypes.shape({
+          item: PropTypes.string,
+          id: PropTypes.string,
+          label: PropTypes.string,
+          percentage: PropTypes.string,
+        }).isRequired,
+      ),
+    })
+  ).isRequired,
 };
