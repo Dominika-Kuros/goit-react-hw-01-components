@@ -2,7 +2,6 @@ import { getRandomColor } from 'utils/getRandomColor';
 import PropTypes from 'prop-types';
 import css from './Statistics.module.css';
 
-
 export const Statistics = ({ title, stats }) => (
   <section className={css.statistics}>
     {<h2 className={css.title}>{title}</h2>}
